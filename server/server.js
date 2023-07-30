@@ -13,4 +13,8 @@ server.get('/', (req, res) => {
     res.send('<h1>Hello world</h1>')
 })
 
+server.get('/compliment', (req, res) => {
+    res.send('<h1>You look great today</h1>')
+})
+
 export default server
