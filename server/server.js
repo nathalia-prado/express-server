@@ -26,4 +26,13 @@ server.get('/profile', (req, res) => {
     }
   })
 
+server.get('/profiles/:id', (req, res) => {
+    const id = req.params.id 
+    if(id === '1'){
+        res.sendFile(__dirname + '/silvia.html')
+    } else if(id === '2') {
+        res.sendFile(__dirname + '/sampson.html')
+    }
+})
+
 export default server
