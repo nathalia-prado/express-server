@@ -18,7 +18,12 @@ server.get('/compliment', (req, res) => {
 })
 
 server.get('/profile', (req, res) => {
-    res.sendFile(__dirname + '/silvia.html')
+    const name = req.query.name 
+    if(name === 'silvia'){
+        res.sendFile(__dirname + '/silvia.html')
+    } else if(name === 'sampson') {
+        res.sendFile(__dirname + '/sampson.html')
+    }
   })
 
 export default server
