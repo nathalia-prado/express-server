@@ -1,6 +1,5 @@
 import * as Path from 'node:path/posix'
 import * as URL from 'node:url'
-
 import express from 'express'
 
 const __filename = URL.fileURLToPath(import.meta.url)
@@ -25,7 +24,7 @@ server.get('/profile', (req, res) => {
     } else if(name === 'sampson') {
         res.sendFile(__dirname + '/sampson.html')
     }
-  })
+})
 
 server.get('/profiles/:id', (req, res) => {
     const id = req.params.id 
