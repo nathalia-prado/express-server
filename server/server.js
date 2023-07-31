@@ -35,4 +35,12 @@ server.get('/profiles/:id', (req, res) => {
     }
 })
 
+server.get('/get-name', (req, res) => {
+    res.sendFile(Path.resolve('public/get-name.html'))
+})
+
+server.post('/named-compliment', (req, res) => {
+    res.send(`<h1>You are special, ${req.body.name}.</h1>`)
+})
+
 export default server
