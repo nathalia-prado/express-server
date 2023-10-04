@@ -1,0 +1,13 @@
+body {  
+    background-color: rgb(212, 255, 192);  
+    text-align: center;
+} 
+
+input {
+    width: 15%;   
+    margin: 8px 0;  
+    padding: 12px 20px;   
+    display: inline-block;   
+    border: 2px solid green;   
+    box-sizing: border-box;   
+}
